@@ -13,7 +13,7 @@ New Relic transaction tracing instrumentation for Next.js
     - `npm install git+ssh://git@github.com:newrelic-experimental/node-newrelic-nextjs.git` for SSH
 3. Now we install both the New Relic Node Agent and the Next.js instrumentation into Next.js which is the actual Node application by adding this line
     ```
-    require('newrelic'); require('@newrelic-experimental/next.js');
+    require('newrelic'); require('@newrelic-experimental/nextjs');
     ```
     to `node_modules/next/dist/bin/next` inserted as line 2
 4. Run your application as usual.
