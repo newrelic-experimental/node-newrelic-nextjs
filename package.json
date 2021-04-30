@@ -1,0 +1,37 @@
+{
+  "name": "@newrelic-experimental/nextjs",
+  "version": "1.0.0",
+  "description": "New Relic instrumentation for Next.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run unit && npm run versioned",
+    "unit": "tap tests/unit/**/*.tap.js --no-coverage",
+    "versioned": "versioned-tests --minor -i 2 'tests/versioned/*.tap.js'",
+    "lint": "eslint *.js lib tests"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "author": "New Relic ODP group <odp@newrelic.com>",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "devDependencies": {
+    "@newrelic/test-utilities": "^4.0.0",
+    "next": "latest",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "eslint": "^5.8.0",
+    "newrelic": "^6.11.0",
+    "semver": "^5.7.1",
+    "tap": "^14.10.7"
+  },
+  "dependencies": {
+    "methods": "^1.1.2"
+  },
+  "peerDependencies": {
+    "newrelic": ">=6.11.0"
+  }
+}
